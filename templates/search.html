@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>
+    Search page
+</h1>
+<div class="search">
+<form action="/search" method="POST">
+<input type="search" placeholder="search for question .. " name="search" class="search-bar" >
+</form>
+
+{% for question in data %}
+<ul>
+<li class="results"> <a href="/questions/{{question.id}}"> - {{ question.title }} </a></li>
+</ul>
+{% endfor %}
+
+</div>
+{% endblock %}

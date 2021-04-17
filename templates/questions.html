@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="question-box">
+    {% for data in current_ques %}
+    <div class="the-question">
+        <a href="questions/{{data.id}}">{{data.title}}</a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="pages">
+
+    {% if total >= 1 and total <= 4 %}
+    <a href="http://127.0.0.1:5000/?page=1" class="link" id="first">1</a>
+    {% endif %}
+    {% if total >= 5 and total <= 8 %}
+    <a href="http://127.0.0.1:5000/?page=1" class="link" id="first">1</a>
+    <a href="http://127.0.0.1:5000/?page=2" class="link" id="second">2</a>
+    {% endif %}
+    {% if total >= 9 and total <= 12 %}
+    <a href="http://127.0.0.1:5000/?page=1" class="link" id="first">1</a>
+    <a href="http://127.0.0.1:5000/?page=2" class="link" id="second">2</a>
+    <a href="http://127.0.0.1:5000/?page=3" class="link" id="third">3</a>
+    {% endif %}
+    {% if total >= 13 and total <= 16 %}
+    <a href="http://127.0.0.1:5000/?page=1" class="link" id="first">1</a>
+    <a href="http://127.0.0.1:5000/?page=2" class="link" id="second">2</a>
+    <a href="http://127.0.0.1:5000/?page=3" class="link" id="third">3</a>
+    <a href="http://127.0.0.1:5000/?page=4" class="link" id="fourth">4</a>
+    {% endif %}
+    {% if total >= 17 and total <= 20 %}
+    <a href="http://127.0.0.1:5000/?page=1" class="link" id="first">1</a>
+    <a href="http://127.0.0.1:5000/?page=2" class="link" id="second">2</a>
+    <a href="http://127.0.0.1:5000/?page=3" class="link" id="third">3</a>
+    <a href="http://127.0.0.1:5000/?page=4" class="link" id="fourth">4</a>
+    <a href="http://127.0.0.1:5000/?page=5" class="link" id="fifth">5</a>
+    {% endif %}
+
+{% endblock %}

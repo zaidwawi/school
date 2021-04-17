@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #464444;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.nav ul li {
+    list-style: none;
+}
+.nav ul{
+    display:flex;
+    width: 70%;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    height: 60px;
+    line-height: 60px;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+}
+h2{
+    color: lavender;
+    font-family: sans-serif;
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+}
+
+hr{
+    border: 5px solid white;
+    
+}
+
+.search{
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 70px;
+height: 350px;
+}
+.linesr{
+    margin-top: 18%;
+    border-color: lightgray;
+}
+.search-bar{
+    border-radius: 20px;
+    border:1px solid white;
+    width: 550px;
+    height: 40px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 10px;
+
+}
+.search-bar:focus{
+    outline: none;
+    border: 3px solid gray;
+}
+.th-search{
+    background-color: red;
+    width: 30px;
+    height: 15px;
+    
+}
+.searching{
+    width: 30px;
+    position: absolute;
+    top: 6%;
+    left: 75%;
+}
+
+.question-box{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 60%;
+    height: 75%;
+}
+
+.the-question{
+    border: 2px solid black;
+    margin-top: 40px;
+    height: 60px;
+    background-color:#131212;
+    width: 70%;
+    margin-left: 20px;
+    color: white;
+    font-size: 23px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 20px;
+}
+.all{
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.add-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#title, #answer, #youtube, #doc, #image{
+    width: 250px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color:#464444;
+    border-bottom:3px solid lavender ;
+}
+#title:focus, #answer:focus, #youtube:focus, #doc:focus, #image:focus{
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+label{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#submit{
+    width: 100px;
+}
+.pages{
+    position: absolute;
+    top: 90%;
+    left: 57%;
+}
+.link{
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+}
+#first:focus, #second:focus, #third:focus, #fourth:focus, #fifth:focus{
+    color: red;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.image{
+    border: 2px solid black;
+    width: 350px;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    
+}
+.titles{
+    color: lavender;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.answerss{
+    color: lavender;
+    font-size: 20px;
+    position: absolute;
+    top: 33%;
+    left: 5%;
+}
+
+.refrences{
+    color: lavender;
+    position: absolute;
+    left: 5%;
+    top: 46%;
+    font-size: 21px;
+}
+dd{
+    margin-left: 20px;
+}
+.subjectss{
+    color: lavender;
+    position: absolute;
+    left: 5%;
+    top: 66%;
+    font-size: 21px;
+}
+.diffi{
+    position: absolute;
+    color: lavender;
+    top: 72%;
+    left: 5%;
+    font-size: 21px;
+}
+.the-question a{
+    color: white;
+    text-decoration: none;
+}
+.the-question a:focus{
+    color: lightblue;
+    text-decoration: underline;
+}
+.the-question a:hover{
+    color: blue;
+}
+.refrences .a{
+    color: blue;
+}
+.delete a{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    background:rgba(255, 0, 0, 0.8 );
+    border: 2px solid black;
+    width: 250px;
+    height: 50px;
+    position:absolute;
+    top: 90%;
+    left: 5%;
+    font-size: 20px;
+    text-decoration: none;
+}
+.delete a:hover{
+    background: rgba(100, 100, 255, 0.8);
+    color: lavender;
+}
+h1{
+    color: lavender;
+    text-align: center;
+    margin-top: 30px;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+.button a{
+    display: inline-block;
+    color: white;
+    border: 2px solid black;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: rgba(61, 61, 61, 0.8);
+    text-decoration: none;
+}
+
+.buttons{
+    position: relative;
+    height: 60px;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #111;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .buttons:before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+  }
+  .buttons:hover:before{
+    opacity: 1;
+  }
+  .buttons:hover:active{
+    background: none;
+  }
+  .buttons:hover:active:before{
+    filter: blur(2px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+.buttons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.name{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+}
+em{
+    font-size: normal;
+    text-align: center;
+    color: lavenderblush
+}
+
+.last-question{
+    border: 2px solid black;
+    height: 60px;
+    background-color:#131212;
+    width: 550px;
+    color: white;
+    font-size: 23px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.containyr{
+    /* border: 2px solid black; */
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lasting{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.results a{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+.results{
+    margin-top: 40px;
+}
+.results:hover{
+    color: lightblue;
+}

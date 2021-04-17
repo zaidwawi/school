@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> zaid </title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/sty.css')}}">
+
+
+
+</head>
+<body>
+    <div class="nav">
+        <h2>
+            Schoolish
+        </h2>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/add-question">ADD QUESTION</a></li>
+            <li><a href="#">QUESTIONS</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+   
+
+    
+<div class="contaners">
+    {% if image == '' %}
+    <img src=" {{ image }} " alt="alt" class="image" style="visibility: hidden;">
+    {% elif image != '' %}
+    <img src=" {{ image }} " alt="alt" class="image" style="visibility: visible;">
+    {% endif %}
+
+</div>
+
+<div class="titles">
+    {{ title }}
+</div>
+
+<div class="answerss">
+    answer: {{ answer }}
+</div>
+<div class="refrences">
+    <dl>
+        Refrences:
+    </dl>
+    <dd>
+        - Youtube link : <a href="{{ youtube }}"> click here  </a>
+    </dd>
+    <dd>
+        - Documentation link :  <a href="{{ docs }}"> click here </a>
+    </dd>
+</div>
+
+<div class="subjectss">
+    subject: {{ subject }}
+</div>
+<div class="diffi">
+    difficulty: {{ difficulty }}
+</div>
+
+{% for dt in the_ques %}
+<div class="delete">
+    <a href="/delete/{{ dt.id }}" class="delete"> Delete </a>
+{% endfor %}
+    
+</div>
+</body>
+</html>
