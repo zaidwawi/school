@@ -30,7 +30,7 @@ def create_app(test_config=None):
     def index():
         question = Questions.query.order_by("id").first()
 
-        return render_template('home.html', ss = question.title)
+        return render_template('home.html', ss = question)
     
     @app.route('/questions')
     def show_questions():
